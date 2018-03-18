@@ -1,0 +1,83 @@
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #727272 ;
+	font-weight: 400;
+}
+a:hover {
+	color: #727272;
+	text-decoration: none;
+}
+.menu {
+	padding: 20px 15px;
+	margin-bottom: 10%;
+}
+.image-product{
+	max-width: 50%;
+}
+.products {
+	text-align: center;
+}
+.products img {
+	max-width: 100%;
+}
+.products h2{
+	font-size: 1rem;
+}
+.products .price {
+	margin-bottom: 0.5em;
+}
+.price {
+	display: block;
+	margin-bottom: 2.5em;
+}
+.category a {
+	text-decoration: underline;
+}
+h1.product-name {
+	line-height: 2.5em;
+} 
+.tabs li a {
+	padding: 1em 0;
+	display: block;
+	border-top:1px solid rgba(0,0,0,.05);	 
+}
+.reviews-tab {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+
+}
+.active {
+	display: block; !important
+}
+.deactive {
+	display: none;
+}
+.description h2 {
+	margin-bottom: 0.5em;
+}
+.required {
+	color: red;
+}
+.rating-form {
+    	width: 100%;
+}
+textarea {
+	background: #f2f2f2;
+} 
+/* @media (max-width: 576px){
+	.image-product{
+		max-width: 100%;
+	}
+} */
+.comment-form-author,.comment-form-email {
+	width: 47%;
+	display: inline-block;
+	float: left;
+	margin-right: 3%;
+}
+.comment-form-author input,.comment-form-email input {
+	display: inherit;
+	width: 100%;
+}
