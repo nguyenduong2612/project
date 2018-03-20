@@ -1,0 +1,27 @@
+label.your-rate{
+    display: block;
+}
+.rating {
+    float:left;
+}
+.rating span { float:right; position:relative; }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.rating span label {
+    display:inline-block;
+    text-align:center;
+    color:#ccc;
+    background: transparent;
+    margin-right:2px;
+    line-height:30px;
+}
+.rating span:hover ~span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    color:#96588a;
+}

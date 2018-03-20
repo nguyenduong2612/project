@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="css/product-rating.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="fontawesome-all.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/product-rating.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu row">
+            <a href="#home" class="home">
+				<span class="oi oi-home"><i class="fas fa-home"></i> &nbsp;Home </span>
+			</a>
+            <span>&nbsp;>&nbsp;</span>
+            <a href="#T-shirts">
+				<span> T-shirts </span>
+			</a>
+            <span>&nbsp;>&nbsp;</span>
+            <a href="#V-neck T-shirts">
+				<span> V-neck T-shirts</span>
+			</a>
+        </div>
+        <div class="row product">
+            <div class="col-sm left">
+                <div>
+                    <img class="image-product" src="img/vneck-tee.jpg">
+                    <i>search</i>
+                </div>
+            </div>
+            <div class="col-sm right">
+                <h1 class="product-name">V-neck T-shirt</h1>
+                <span class="price">₫18.00</span>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto my-1">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto my-1">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="submit" class="button alt btn btn-dark">Add to basket</button>
+                    </div>
+                </div>
+                <span class="category">Category: <a href="#category">T-shirt</a></span>
+            </div>
+        </div>
+        <div class="tabs row">
+            <ul class="tabs col-sm-3">
+                <li class="description-tab" id="description"><a href="#description">Description</a></li>
+                <li class="reviews-tab" id="reviews"><a href="#reviews">Reviews (0)</a></li>
+            </ul>
+            <div class="wrapper col-sm-6">
+                <div class="description active">
+                    <h2>Description</h2>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <div class="reviews deactive">
+                    <div class="comments">
+                        <h2></h2>
+                        <p>There are no reviews yet.</p>
+                    </div>
+                    <div class="reviews-form">
+                        <form>
+                            <p>Your email address will not be published. Required fields are marked<span class="required">&nbsp;*</span></p>
+                            <div class="rating" style="width: 100%">
+                                <label class="your-rate">Your rating</label>
+                                <div class="rating">
+                                    <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"><i class="fa fa-star"></i></label></span>
+                                    <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"><i class="fa fa-star"></i></label></span>
+                                    <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"><i class="fa fa-star"></i></label></span>
+                                    <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"><i class="fa fa-star"></i></label></span>
+                                    <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"><i class="fa fa-star"></i></label></span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <span style="display: block;">Your reviews<span class="required">&nbsp;*</span></span>
+                                <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required=""></textarea>
+                            </div>
+                            <div class="information">
+                                <p class="comment-form-author">
+                                    <label for="author">Name <span class="required">*</span></label>
+                                    <input id="author" name="author" type="text" value="" size="30" aria-required="true" required="">
+                                </p>
+                                <p class="comment-form-email">
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input id="email" name="email" type="email" value="" size="30" aria-required="true" required="">
+                                </p>
+                                <p class="form-submit">
+                                    <input name="submit" type="submit" id="submit" class="submit" value="Submit">
+                                    <input type="hidden" name="comment_post_ID" value="229" id="comment_post_ID">
+                                    <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="related-products container">
+        <h2 class="title">Related products</h2>
+        <ul class="products row col-sm-9">
+            <li class="products col-sm">
+                <a href="#product">
+        				<img src="img/long-sleeve-tee.jpg">
+        				<h2>Polo</h2>
+        				<span class="price">₫18.00</span>
+        			</a>
+                <a href="#add">
+                    <button type="submit" class="btn btn-light">Add to basket</button>
+                </a>
+            </li>
+            <li class="products col-sm">
+                <a href="#product">
+        				<img src="img/long-sleeve-tee.jpg">
+        				<h2>Polo</h2>
+        				<span class="price">₫18.00</span>
+        			</a>
+                <a href="#add">
+                    <button type="submit" class="btn btn-light">Add to basket</button>
+                </a>
+            </li>
+            <li class="products col-sm">
+                <a href="#product">
+        				<img src="img/long-sleeve-tee.jpg">
+        				<h2>Polo</h2>
+        				<span class="price">₫18.00</span>
+        			</a>
+                <a href="#add">
+                    <button type="submit" class="btn btn-light">Add to basket</button>
+                </a>
+            </li>
+        </ul>
+    </section>
+    </div>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
